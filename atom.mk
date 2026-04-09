@@ -19,10 +19,9 @@ LOCAL_LIBRARIES := \
 LOCAL_CMAKE_CONFIGURE_ARGS := \
 	-DBUILD_TESTING:BOOL=False
 
-# LOCAL_EXPORT_C_INCLUDES := $(TARGET_OUT_STAGING)/usr/include/ignition/fuel_tools4
+LOCAL_EXPORT_C_INCLUDES := $(TARGET_OUT_STAGING)/usr/include/gz/sensors10
 
-# LOCAL_EXPORT_LDLIBS := \
-# 	-lignition-fuel-tools4
+LOCAL_EXPORT_LDLIBS := -lgz-sensors
 
 include $(BUILD_CMAKE)
 
